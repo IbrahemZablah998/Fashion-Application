@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_addtocart"
+        android:icon="@drawable/ic_store_black_24dp"
+        android:title="Add to Cart" />
+
+    <item
+        android:id="@+id/navigation_buy"
+        android:icon="@drawable/ic_shopping_cart_black_24dp"
+        android:title="Buy Now" />
+</menu>

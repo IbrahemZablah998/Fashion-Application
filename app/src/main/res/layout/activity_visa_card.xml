@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    tools:ignore="NamespaceTypo">
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+
+        android:layout_height="50dp">
+
+        <TextView
+            android:paddingLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:text="Payment Method"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <EditText
+            android:id="@+id/card_numer"
+            android:layout_marginLeft="15dp"
+            android:layout_width="360dp"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:paddingTop="5dp"
+            android:hint="Card number"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:textColor="@color/design_default_color_primary"
+            android:textColorHint="@color/black"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:inputType="date"
+            android:id="@+id/MM"
+            android:layout_marginLeft="15dp"
+
+            android:textColorHint="@color/black"
+            android:textColor="@color/design_default_color_primary"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="MM"/>
+
+        <TextView
+            android:textColorHint="@color/black"
+            android:textColor="@color/design_default_color_primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            />
+
+        <EditText
+            android:inputType="date"
+            android:id="@+id/YY"
+            android:textColor="@color/design_default_color_primary"
+            android:textColorHint="@color/black"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:hint="YY"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "160922545046",
+    "firebase_url": "https://projectsmartershopping.firebaseio.com",
+    "project_id": "projectsmartershopping",
+    "storage_bucket": "projectsmartershopping.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:160922545046:android:f8a3127b62de0625",
+        "android_client_info": {
+          "package_name": "com.example.projectsmartershopping"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "160922545046-ak5tcm5ddfv1sccfgbsfnchtok9bh5lh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.projectsmartershopping",
+            "certificate_hash": "b4f34b59fc5e7f1586b58751d820ec8054bdd22d"
+          }
+        },
+        {
+          "client_id": "160922545046-o217oj6a5t3tcoe4duic54te65jns989.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmcLR9BAcMAPHPHjBdGYDPcklMgXBGaRQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "160922545046-o217oj6a5t3tcoe4duic54te65jns989.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

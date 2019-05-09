@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.BuyActivity">
+
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+
+        android:layout_height="50dp">
+
+
+        <TextView
+            android:paddingLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:text="Payment Method"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <EditText
+            android:id="@+id/card_numer"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:paddingTop="5dp"
+            android:hint="Card number"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:textColor="@color/design_default_color_primary"
+            android:textColorHint="@color/black"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:inputType="date"
+            android:id="@+id/MM"
+            android:layout_marginLeft="15dp"
+
+            android:textColorHint="@color/black"
+            android:textColor="@color/design_default_color_primary"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="MM"/>
+
+        <TextView
+            android:textColorHint="@color/black"
+            android:textColor="@color/design_default_color_primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            />
+
+        <EditText
+            android:inputType="date"
+            android:id="@+id/YY"
+            android:textColor="@color/design_default_color_primary"
+            android:textColorHint="@color/black"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:hint="YY"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginBottom="7dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true">
+
+
+            <ImageView
+                android:id="@+id/imgs_cart"
+                android:layout_width="230dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="200dp"
+                android:background="@drawable/loading_shape"
+                android:scaleType="centerCrop"
+                android:transitionName="img" />
+
+
+            <TextView
+                android:id="@+id/price_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="sans-serif-light"
+                android:maxLines="2"
+                android:singleLine="true"
+                android:text="0.0"
+                android:textColor="@color/colorTextTitle"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/price_i_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginStart="285dp"
+                android:layout_marginLeft="285dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="sans-serif-light"
+                android:maxLines="2"
+                android:singleLine="true"
+                android:text=" ILS"
+                android:textColor="@color/colorTextTitle"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rate_cart"
+                android:layout_width="86dp"
+                android:layout_height="14dp"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="260dp"
+                android:layout_marginTop="50dp"
+                android:drawableRight="@drawable/ic_star_black_24dp"
+                android:paddingRight="20dp"
+                android:text="rate" />
+
+            <TextView
+                android:id="@+id/desc_cart"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="260dp"
+                android:layout_marginTop="75dp"
+                android:paddingRight="20dp"
+                android:text="Description" />
+
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="Optional message here(English only)"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Subtotal:"/>
+
+        <TextView
+            android:id="@+id/subTotal"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text=" ILS"
+            />
+
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <Button
+                android:id="@+id/place_order"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="180dp"
+                android:text="PLACE ORDER" />
+
+
+
+
+        </FrameLayout>
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</LinearLayout>
